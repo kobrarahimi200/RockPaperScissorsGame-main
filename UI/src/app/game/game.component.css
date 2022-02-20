@@ -1,0 +1,126 @@
+#main {
+  margin: 2% 10%;
+  border: darkgray 2px solid;
+  background-color: rgb(226, 222, 222);
+  /* padding-left: 12%; */
+}
+
+#main .container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main .container {
+  height: 200px;
+  display: inline-flex;
+  align-items: center;
+  margin-left: 20%;
+}
+
+#main .container .person1 {
+  display: flex;
+  float: left;
+}
+
+#main .container .person2 {
+  display: flex;
+  float: right;
+}
+
+#main .container span {
+  margin-left: 5%;
+}
+
+#main .container2 .btn {
+  width: 20%;
+  display: inline-flex;
+  border-radius: 40%;
+  color: rgb(92, 89, 89);
+  border: rgb(138, 136, 136) 3px solid;
+  margin: 5px;
+}
+
+#main .container2 .btn:hover {
+  color: black;
+  border-color: black;
+}
+
+#scorediv {
+  display: flex;
+  margin-left: 40%;
+  margin-top: 3%;
+}
+
+#scorenum {
+  margin-left: 3%;
+  padding: 3px 10px;
+  border-radius: 4%;
+  border: darkgray 1px solid;
+}
+
+.winnername {
+  position: absolute;
+  margin: 2% 20%;
+  border: darkgray 1px solid;
+  width: 80%;
+  background-color: rgb(226, 222, 222);
+  ;
+  margin-left: 0px;
+}
+
+#title {
+  width: auto;
+  height: auto;
+  margin: 2% 28%;
+  border-radius: 0.3in;
+}
+
+.person2 svg.hand-paper {
+  transform: rotate(-90deg) scaleX(-1);
+  ;
+}
+
+.person2 svg.hand-rock {
+  transform: rotate(-90deg) scaleX(-1);
+  ;
+}
+
+.text-gold {
+  color: #c98917
+}
+
+.person1 svg.hand-scissors {
+  transform: scaleX(-1);
+}
+
+.person1 svg.hand-paper {
+  transform: rotate(90deg);
+}
+
+.person1 svg.hand-rock {
+  transform: rotate(90deg);
+}
+
+.person2 svg.hand-paper {
+  transform: rotate(-90deg) scaleX(-1);
+  ;
+}
+
+.person2 svg.hand-rock {
+  transform: rotate(-90deg) scaleX(-1);
+  ;
+}
+
+.text-gold {
+  color: #c98917
+}
+
+#reset {
+  width: 18%;
+  height: 30px;
+  border: 1px solid gray;
+  border-radius: 0.5%;
+  margin: 3% 40%;
+  display: block;
+}

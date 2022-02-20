@@ -1,0 +1,55 @@
+<div id="main">
+    <div id="title">
+        <h1>ScissorsStonePaper Game</h1>
+    </div>
+    <div id="scorediv">Bot <span id="scorenum">{{winner.botWins}}</span> 
+        <span id="scorenum"> {{winner.humanWins}}</span> Human</div>
+    <div id="scorediv">
+        <div class="" *ngIf="!computer && !person; else elseBlock">
+            <h2>Choose your weapon</h2>
+        </div>
+        <ng-template class="" #elseBlock>
+            <h2 class="">Winner is {{winner.winnerName}}</h2>
+        </ng-template>
+    </div>
+
+    <div class="container">
+        <div class="">
+            <div class="person1" *ngIf="computer">
+                <span>Bot</span>
+                <svg [ngClass]="'icon text-gold hand-' + computer" *ngIf="computer">
+                    <use [attr.xlink:href]="'#hand-' + winner.botChoice"></use>
+                </svg>
+            </div>
+
+            <div class="person2" *ngIf="person">
+                <svg [ngClass]="'icon text-gold hand-' + person" *ngIf="person">
+                    <use [attr.xlink:href]="'#hand-' + humanChoice"></use>
+                </svg>
+                <span>You</span>
+            </div>
+        </div>
+
+    </div>
+    <div class="container2">
+        <button class="btn" (click)="playNow('rock')">
+            <svg>
+                <use xlink:href="#hand-rock"></use>
+            </svg>
+        </button>
+
+        <button class="btn" (click)="playNow('paper')">
+            <svg>
+                <use xlink:href="#hand-paper"></use>
+            </svg>
+        </button>
+
+        <button class="btn" (click)="playNow('scissors')">
+            <svg>
+                <use xlink:href="#hand-scissors"></use>
+            </svg>
+        </button>
+    </div>
+    <div><button id="reset" (click)="reset()">Reset</button></div>
+
+</div>
