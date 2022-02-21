@@ -51,6 +51,7 @@ export class GameComponent implements OnInit {
     // }
     this.humanChoice = choiceName;
   }
+  
   reset(): void {
     console.log("reset");
     this.winner.humanWins=0;
