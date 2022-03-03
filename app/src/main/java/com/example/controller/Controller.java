@@ -21,7 +21,7 @@ public class Controller {
 		return game.getResult();
 	}
 
-	@GetMapping("/{reset}")
+	@GetMapping("/reset")
 	public void reset(){
 		System.out.println("reset in conroller");
 		game.reset();

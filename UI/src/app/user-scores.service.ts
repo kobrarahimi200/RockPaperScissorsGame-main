@@ -22,7 +22,7 @@ export class UserScoresService {
 
   public reset() {
     console.log("reset service");
-    return this.http.get(`${this.baseUrl + "/"}`);
+    return this.http.get(`${this.baseUrl + "reset"}`);
   }
 
 }

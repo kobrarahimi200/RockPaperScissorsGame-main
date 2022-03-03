@@ -54,8 +54,9 @@ export class GameComponent implements OnInit {
   
   reset(): void {
     console.log("reset");
+    this.service.reset();
     this.winner.humanWins=0;
     this.winner.botWins =0;
-    this.service.reset();
+    
   }
 }
